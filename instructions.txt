@@ -1,0 +1,61 @@
+1. To create new virtual env folder:
+====================================
+
+python -m venv [folder-name]
+eg: python -m venv venv 
+
+2. Activate the environment:
+============================
+
+. venv/bin/activate
+
+3. save project packages installed to requirements.txt file
+===========================================================
+
+pip freeze > requirements.txt
+
+3. Install required packages from the requirements.txt file
+===========================================================
+
+pip install -r requirements.txt
+
+4. to exit venv environement
+============================
+
+deactivate
+
+5. Create new folder with poetry:
+=================================
+
+poetry new [folder name]
+
+6. remove package using poetry:
+==============================
+
+poetry remove [package name]
+
+7. remove / resync lock file / env after remove:
+==========================================
+
+poetry install --sync
+
+8. build wheel using poetry:
+============================
+
+poetry build
+
+9. Add package to group using poetry:
+=====================================
+
+poetry add [package name] -- group [group name]
+eg: poetry add pandas --group dev
+eg: poetry add pytest --group test
+
+
+
+
+
+
+
+
+
